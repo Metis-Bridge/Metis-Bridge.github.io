@@ -1,1 +1,24 @@
-{"name":"Metis Bridge","short_name":"Metis Bridge","icons":[{"src":"web-app-manifest-192x192.png","sizes":"192x192","type":"image/png","purpose":"maskable"},{"src":"web-app-manifest-512x512.png","sizes":"512x512","type":"image/png","purpose":"maskable"}],"theme_color":"#ffffff","background_color":"#ffffff","display":"standalone","start_url":"."}
+{
+  "name": "Metis Bridge",
+  "short_name": "Metis Bridge",
+  "description": "Metis Bridge moves ETH and tokens between Ethereum and Metis from your own wallet.",
+  "start_url": "https://metis-bridge.github.io/",
+  "scope": "https://metis-bridge.github.io/",
+  "display": "standalone",
+  "background_color": "#05080C",
+  "theme_color": "#05080C",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

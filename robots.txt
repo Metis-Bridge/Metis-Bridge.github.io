@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: INSERT_URL/sitemap.xml
+
+Sitemap: https://metis-bridge.github.io/sitemap.xml
